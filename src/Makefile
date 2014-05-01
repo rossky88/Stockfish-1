@@ -362,11 +362,11 @@ help:
 
 .PHONY: build profile-build
 build:
-	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) config-sanity
+#	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) config-sanity
 	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) all
 
 profile-build:
-	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) config-sanity
+#	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) config-sanity
 	@echo ""
 	@echo "Step 0/4. Preparing for profile build."
 	$(MAKE) ARCH=$(ARCH) COMP=$(COMP) $(profile_prepare)
